@@ -1,0 +1,198 @@
+/* ===== RESET E BASE ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #dadada;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header,
+.cabecalho__inicio {
+    background-color: rgb(0, 103, 147);
+    color: white;
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho__inicio h1 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+/* ===== MAIN CONTENT ===== */
+main,
+.conteudo__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* ===== SECTIONS ===== */
+section,
+.secao_principal {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 2rem 0;
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1rem;
+    border: 1px solid black;
+    line-height: 1.8rem;
+    word-wrap: break-word;
+}
+
+/* ===== TITLES ===== */
+.legenda__titulo2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.titulo__lista {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    display: block;
+}
+
+/* ===== LISTS ===== */
+.lista__descricao {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.lista__descricao li {
+    padding: 0.75rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ===== FIGURES & IMAGES ===== */
+figure,
+img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure strong {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.figura__arduino {
+    padding: 1.5rem;
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 4px;
+    margin: 2rem 0 0 0;
+    background-color: white;
+}
+
+.figura__arduino figcaption {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.figura__arduino a {
+    color: rgb(0, 103, 147);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.figura__arduino a:hover {
+    color: rgb(0, 75, 107);
+    text-decoration: underline;
+}
+
+/* ===== GRID CONTAINER ===== */
+section.secao__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+section.secao__container figure {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ===== VIDEO ===== */
+.espacamento {
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+video,
+.video__arduino {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 4px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.875rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+/* ===== STRONG TAGS ===== */
+.secao_principal strong {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}

@@ -1,0 +1,52 @@
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo__inicial {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 4rem;
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo__conteudo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a5655;
+    margin-bottom: 16px;
+}
+
+.descricao__inicial {
+    margin-bottom: 24px;
+    color:#4a5655
+}
+
+.botao__inicial {
+    background-color: #006793;
+    color: white;
+    padding-inline: 24px;
+    padding-block: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao__inicial:hover {
+    background-color: #004b6b;
+}

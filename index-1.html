@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduíno - Jogo da memória</title>
+    <link rel="icon" href="./assets/jogo-memoria.png" type="apple-touch-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+
+<body class="montserrat">
+
+    <header class="cabecalho__inicio">
+        <h1>Jogo da memória com LED - Arduíno</h1>
+    </header>
+
+    <main class="conteudo__principal">
+        <section class="secao_principal">
+            <p>O jogo da memória com luzes (quatro cores) é uma atividade em que o jogador deve memorizar e reproduzir
+                uma sequência de sinais luminosos exibidos por quatro luzes de cores diferentes. A cada rodada, uma nova
+                cor é adicionada à sequência, aumentando o nível de dificuldade.
+                O objetivo é repetir a sequência corretamente pelo maior tempo possível, exercitando atenção,
+                concentração e memória.</p>
+            <h2 class="legenda__titulo2">Como funciona o arduino?</h2>
+            <p>Ao ligar o Arduino, os LEDs acenderão automaticamente e se iluminarão em sequência até que o jogador
+                pressione um botão para iniciar o jogo da memória.</p>
+
+            <span class="titulo__lista">Requisitos para montagem:</span>
+            <ul class="lista__descricao">
+                <li>4 botões de pressão (push buttons)</li>
+                <li>4 LEDs (cores à escolha)</li>
+                <li>4 resistores</li>
+                <li>1 buzzer piezoelétrico (piezo)</li>
+                <li>1 Arduino UNO</li>
+                <li>1 placa de ensaio (protoboard)</li>
+                <li>19 fios (jumpers)</li>
+            </ul>
+
+            <figure class="figura__arduino">
+                <figcaption>Jogo da memória - Arduino</figcaption>
+                <img src="./assets/jogo-memoria-arduino.png" alt="Arduino jogo da memória no TinkerCad">
+                <br><br>
+                <a href="https://www.tinkercad.com/circuits" target="_blank" rel="noopener noreferrer">Acessar circuito
+                    no TinkerCad</a>
+            </figure>
+        </section>
+
+        <section class="secao__container">
+            <figure>
+                <strong>Funções de configurações</strong>
+                <img src="./assets/estrutura-codigo1.png" alt="Funções de configurações">
+            </figure>
+
+            <figure>
+                <strong>Funções de lógica de jogo</strong>
+                <img src="./assets/estrutura-codigo3.png" alt="Funções de lógica de jogo">
+            </figure>
+
+            <figure>
+                <strong>Funções de controle de hardware</strong>
+                <img src="./assets/estrutura-codigo4.png" alt="Funções de controle de hardware">
+            </figure>
+
+            <figure>
+                <strong>Definições de pinos e parâmetros do jogo</strong>
+                <img src="./assets/estrutura-codigo5.png" alt="Definições de pinos e parâmetros do jogo">
+            </figure>
+
+            <figure>
+                <strong>Função loop()</strong>
+                <img src="./assets/estrutura-codigo2.png" alt="Função loop()">
+            </figure>
+        </section>
+
+        <span class="espacamento">Resultado final</span>
+        <video class="video__arduino" controls>
+            <source src="./assets/JogoMemoria.mp4" type="video/mp4">
+        </video>
+
+        <section class="secao_principal">
+            <h2 class="legenda__titulo2">Curiosidades</h2>
+            <strong>Notas musicais</strong>
+            <p>O código define um monte de #defines para notas musicais , como NOTE_C4(C 4), NOTE_A4(Lá 4), e assim por
+                diante. Cada uma dessas configurações é um número que representa a frequência da nota em Hertz (Hz) . Por
+                exemplo, NOTE_A4é 440 Hz, a frequência padrão para afinar instrumentos. Quando o jogo toca um som, ele usa
+                essas frequências para fazer o buzzer vibrar e produzir o som correspondente à nota.</p>
+
+            <strong>O "Easter-egg" dos Bee-Gees</strong>
+            <p>Uma das partes mais divertidas do código é o "easter egg" dos Bee Gees! Se você segurar o botão amarelo
+                (inferior direito) ao ligar o Arduino, o jogo entra no modo MODE_BEEGEESe começa a tocar uma melodia. O
+                array melody[]contém as notas da música, e a função play_beegees()as reproduz. A função changeLED()faz os
+                LEDs piscarem em sequência, criando um efeito visual que acompanha a música.</p>
+
+            <strong>Modo de batalha de dois jogadores</strong>
+            <p>Além do clássico jogo da memória, o código inclui um MODE_BATTLE para dois jogadores. Esse modo é ativado se
+                você segurar o botão verde (superior direito) ao ligar o Arduino. No modo de batalha, os jogadores se
+                revezam adicionando um novo movimento à sequência, e o jogo continua até que um dos jogadores erre.</p>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
