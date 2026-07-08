@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="./css/queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="montserrat">
+<body class="google-sans">
 
     <header class="cabecalho__inicio">
         <h1>Jogo da memória com LED - Arduíno</h1>
@@ -46,7 +48,8 @@
                 <figcaption>Jogo da memória - Arduino</figcaption>
                 <img src="./images/jogo-memoria-arduino.png" alt="Arduino jogo da memória no TinkerCad">
                 <br><br>
-                <a href="https://www.tinkercad.com/things/4JtNPK4YHC8-jogodamemoria" target="_blank" rel="noopener noreferrer">Acessar circuito
+                <a href="https://www.tinkercad.com/things/4JtNPK4YHC8-jogodamemoria" target="_blank"
+                    rel="noopener noreferrer">Acessar circuito
                     no TinkerCad</a>
             </figure>
         </section>
@@ -87,18 +90,22 @@
             <h2 class="legenda__titulo2">Curiosidades</h2>
             <strong>Notas musicais</strong>
             <p>O código define um monte de #defines para notas musicais , como NOTE_C4(C 4), NOTE_A4(Lá 4), e assim por
-                diante. Cada uma dessas configurações é um número que representa a frequência da nota em Hertz (Hz) . Por
-                exemplo, NOTE_A4é 440 Hz, a frequência padrão para afinar instrumentos. Quando o jogo toca um som, ele usa
+                diante. Cada uma dessas configurações é um número que representa a frequência da nota em Hertz (Hz) .
+                Por
+                exemplo, NOTE_A4é 440 Hz, a frequência padrão para afinar instrumentos. Quando o jogo toca um som, ele
+                usa
                 essas frequências para fazer o buzzer vibrar e produzir o som correspondente à nota.</p>
 
             <strong>O "Easter-egg" dos Bee-Gees</strong>
             <p>Uma das partes mais divertidas do código é o "easter egg" dos Bee Gees! Se você segurar o botão amarelo
                 (inferior direito) ao ligar o Arduino, o jogo entra no modo MODE_BEEGEESe começa a tocar uma melodia. O
-                array melody[]contém as notas da música, e a função play_beegees()as reproduz. A função changeLED()faz os
+                array melody[]contém as notas da música, e a função play_beegees()as reproduz. A função changeLED()faz
+                os
                 LEDs piscarem em sequência, criando um efeito visual que acompanha a música.</p>
 
             <strong>Modo de batalha de dois jogadores</strong>
-            <p>Além do clássico jogo da memória, o código inclui um MODE_BATTLE para dois jogadores. Esse modo é ativado se
+            <p>Além do clássico jogo da memória, o código inclui um MODE_BATTLE para dois jogadores. Esse modo é ativado
+                se
                 você segurar o botão verde (superior direito) ao ligar o Arduino. No modo de batalha, os jogadores se
                 revezam adicionando um novo movimento à sequência, e o jogo continua até que um dos jogadores erre.</p>
         </section>

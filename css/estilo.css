@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
-.montserrat {
-    font-family: "Montserrat", sans-serif;
+.google-sans {
+    font-family: "Google Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
 }
 
 body {
@@ -37,7 +39,7 @@ header,
     line-height: 1.4;
 }
 
-/* conteudo principal */ 
+/* conteudo principal */
 main,
 .conteudo__principal {
     display: flex;
